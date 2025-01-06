@@ -1,0 +1,140 @@
+.resumeSlider {
+  padding: 50px 0;
+  .slick-prev {
+    z-index: 1;
+    left: 70px;
+    z-index: 1;
+    // width: 42px;
+    // height: 42px;
+    // background: #3effc3;
+    // border-radius: 50%;
+  }
+  .slick-next {
+    right: 70px;
+    z-index: 1;
+    // width: 42px;
+    // height: 42px;
+    // background: #3effc3;
+    // border-radius: 50%;
+  }
+
+  .slick-next:before,
+  .slick-prev:before {
+    font-size: 30px;
+    line-height: 1;
+    opacity: 0.75;
+    color: #1d8665;
+  }
+
+  .slick-track {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+#owl-demolition {
+  .active {
+    background-color: transparent;
+    background-color: #4caf50;
+    color: #fff;
+  }
+
+  .owl-item {
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-touch-callout: none;
+
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+  }
+
+  img {
+    border: 1px solid #8d8d8d;
+    background-color: #fff;
+  }
+
+  .owl-item img.owl-lazy {
+    transform-style: preserve-3d;
+  }
+
+  .owl-item .owl-lazy {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  .owl-item img {
+    display: block;
+    width: 100%;
+  }
+
+  .slick-center.slick-current .owl-item img {
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.205);
+  }
+  .slick-center.slick-current .owl-item .onhov-cta {
+    display: block;
+  }
+  .owl-item .onhov-cta {
+    display: none;
+  }
+
+  .onhov-cta {
+    color: #fff !important;
+    background-color: #1d8665;
+    font-size: 15px;
+    padding: 10px 0;
+    border-radius: 0;
+    text-decoration: none !important;
+    width: 220px;
+    text-align: center;
+    transition: all 0.1s ease-in-out;
+    position: absolute;
+    z-index: 9;
+    bottom: 100px;
+    font-weight: 600;
+    text-transform: uppercase;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  .name-hov {
+    color: #244a59;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 38px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .owl-item {
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .owl-img-wrapper {
+      min-height: 404px;
+      img {
+        min-height: 404px;
+        height: auto;
+      }
+    }
+  }
+
+
+}
+
+
+@media only screen and (max-width: 450px) {
+  #owl-demolition .onhov-cta {
+    font-size: 10px;
+    max-width: 100%;
+  }
+}

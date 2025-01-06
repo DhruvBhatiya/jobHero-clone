@@ -1,0 +1,193 @@
+.trustpilot-with-carousal {
+  background-color: #244a59;
+
+  .slick-next:before,
+  .slick-prev:before {
+    font-size: 50px;
+  }
+
+  .slick-dots li.slick-active button:before {
+    opacity: 0.75;
+    color: #fff;
+  }
+
+  .slick-dots li button:before {
+    font-size: 13px;
+    line-height: 35px;
+    color: #fff;
+  }
+
+  .slick-prev {
+    left: -50px;
+  }
+
+  .slick-track {
+    display: flex;
+    gap: 20px;
+  }
+
+  .reviews {
+    width: 75%;
+  }
+
+  .tp-widget-joshua {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+    min-height: 400px;
+    display: flex;
+  }
+
+  .tpilot {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    // flex-wrap: wrap;
+    vertical-align: top;
+    padding: 30px 0px;
+    color: #002d6b;
+    position: relative;
+
+    .tile {
+      position: relative;
+      display: grid;
+      // width: calc(((100% / 15) / 3) - 20px);
+      white-space: normal;
+      // margin: 5px 10px;
+      font-size: 15px;
+      background-color: #fff;
+      transition: 450ms all;
+      -webkit-transform-origin: center left;
+      transform-origin: center left;
+      vertical-align: top;
+      padding: 30px;
+      border-radius: 11px;
+      overflow: hidden;
+    }
+
+    .summary-text {
+      width: 100%;
+      line-height: 1.6;
+    }
+
+    .timeago {
+      font-size: 14px;
+      float: right;
+      color: #464c4e;
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    .review-link {
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 28px;
+      color: #244a59;
+      display: block;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      min-height: 28px;
+      clear: both;
+    }
+
+    .full-review {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      height: 75px;
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: 5px;
+      color: #464c4e;
+    }
+
+    .user-name {
+      color: #464c4e;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .summary {
+      width: 16%;
+      padding: 0px 20px;
+      margin-right: 5%;
+      height: 200px;
+      align-self: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .excellent {
+      color: #fff;
+      text-align: center;
+
+      .top-content {
+        font-size: 18px;
+        line-height: 28px;
+      }
+
+      .svg-logo {
+        width: 150px;
+        height: 35px;
+        display: block;
+        margin: 0 auto;
+      }
+      .bottom-content {
+        margin-top: 5px;
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .top-content {
+        font-size: 18px;
+        line-height: 28px;
+      }
+
+      .top-content,
+      .tpilot .excellent .bottom-content {
+        display: block;
+      }
+    }
+
+    .tpilot .dis-none {
+      display: none !important;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .trustpilot-with-carousal {
+    padding-bottom: 50px;
+    .tpilot {
+      display: block;
+      .summary {
+        width: 100%;
+        height: auto;
+      }
+      .reviews {
+        width: 100%;
+      }
+    }
+
+    .slick-prev {
+      left: -15px;
+    }
+    .slick-next {
+      right: -15px;
+    }
+
+    .slick-next:before,
+    .slick-prev:before {
+      font-size: 25px;
+    }
+
+    .tp-widget-joshua{
+      padding: 0 20px;
+    }
+  }
+}

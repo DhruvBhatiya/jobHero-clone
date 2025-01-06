@@ -1,0 +1,106 @@
+.PerksOfUsingOurBuilders.accordian-wrapper {
+  max-width: 940px;
+  margin-top: 30px;
+  margin: 0 auto;
+  display: block;
+
+  .mt-perks {
+    margin-top: 60px;
+    margin-bottom: 70px;
+  }
+  .marksh2 {
+    color: #244a59;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 34px;
+    text-align: center;
+    // margin-bottom: 10px;
+  }
+
+  .flex-jh {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    // display: flex;
+    // gap: 20px;
+  }
+
+  .flex-jh {
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  .cta-btn-center {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .home-page-cta {
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: -0.31px;
+    padding: 11px 26px;
+    text-decoration: none;
+    display: inline-block;
+    background: #1d8665;
+    margin-bottom: 30px;
+  }
+
+  .accordian-inner-wrapper {
+    width: 49%;
+    .accordion {
+      border: none;
+      border-radius: 2px;
+    }
+
+    .accordion__item {
+      border-radius: 10px;
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.123);
+      padding: 0px;
+      margin-bottom: 20px;
+      border: 1px solid transparent;
+    }
+    .accordion__button {
+      margin-bottom: 0;
+      cursor: pointer;
+      font-size: 20px;
+      letter-spacing: 0;
+      font-weight: 600;
+      color: #1d8665;
+      position: relative;
+      padding-left: 40px;
+      padding-top: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+      background-color: transparent;
+    }
+
+    .accordion__panel {
+      padding-top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .accordian-wrapper {
+    .flex-jh {
+      display: block !important;
+
+      .accordian-img-wrapper {
+        text-align: center;
+      }
+    }
+  }
+
+  .accordian-wrapper .accordian-inner-wrapper {
+    width: 100% !important;
+  }
+  .PerksOfUsingOurBuilders.accordian-wrapper {
+    padding: 0 20px 20px;
+    .mt-perks {
+      margin-top: 50px;
+      margin-bottom: 26px;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+.desktopStyle {
+  background-color: #1d8665 !important;
+  position: relative !important;
+  display: block !important;
+
+  .jh-container {
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+
+  .flex-jh {
+    display: flex;
+  }
+
+  .logo {
+    width: 150px;
+    // height: 34px;
+    margin-top: 5px;
+  }
+
+  .hyperlink {
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 991px) {
+  .desktopStyle .builder-new-link {
+    border-radius: 3px;
+    padding: 10px 15px;
+    font-weight: 600;
+    background-color: #244a59;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.199);
+  }
+
+  .desktopStyle .new-login-button {
+    border: 2px solid #FFFFFF;
+    border-radius: 3px;
+    font-weight: 600;
+    background-color: #1D8665;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.199);
+    padding: 8px 13px;
+}
+}
+
+@media (max-width: 992px) {
+  .desktopStyle .flex-jh {
+    display: flex;
+    justify-content: end;
+
+    .logo {
+      width: 135px;
+      // height: 25px;
+      margin: 0 auto;
+      margin-top: 5px;
+    }
+
+    button.btnMenuIcon {
+      position: absolute;
+    }
+  }
+
+  .css-1r7kz78-MuiModal-root-MuiDrawer-root .MuiDrawer-paper {
+    width: 100% !important;
+  }
+
+  .css-1160xiw-MuiPaper-root-MuiDrawer-paper {
+    background-color: #1d8665 !important;
+  }
+
+  // moileDrawer
+
+  .moileDrawer {
+    color: #fff;
+    .logo {
+      width: 135px;
+      // height: 25px;
+      margin: 0 auto;
+      margin-top: 5px;
+    }
+
+    .closeBtn {
+      color: white;
+      position: absolute;
+      right: 0;
+      top: 13px;
+    }
+
+    .drawerHeader{
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
