@@ -32,8 +32,13 @@ img {
   height: auto;
 }
 
-
-
+/* Disabled all a link  */
+a {
+  pointer-events: none;
+  cursor: default; /* Change the cursor to indicate non-clickable */
+  color: gray; /* Optional: Style to indicate the link is disabled */
+  text-decoration: none; /* Optional: Remove underline if needed */
+}
 
 
 
